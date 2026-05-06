@@ -1,0 +1,296 @@
+:root {
+    /* --- COLORES PRINCIPALES --- */
+    --p-purple-deep: #2e1052;
+    --p-purple-main: #612d91;
+    --p-purple-vibrant: #8c52ff;
+    --p-purple-light: #a478da;
+
+    /* --- COLORES DE SOPORTE --- */
+    --accent-gold: #ffce45;
+    --space-black: #121212;
+    --cloud-white: #f8f9fa;
+    --slate-gray: #4d4d4d;
+
+    /* --- DEGRADADOS --- */
+    --grad-engine: linear-gradient(135deg, #612d91 0%, #8c52ff 100%);
+    --grad-glass: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+    --grad-text: linear-gradient(to right, #612d91, #a478da);
+
+    /* --- EFECTOS AESTHETIC --- */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 8px 20px rgba(97, 45, 145, 0.2);
+    --shadow-neon: 0 0 15px rgba(140, 82, 255, 0.4);
+    --glass-blur: blur(12px);
+
+    /* --- TIPOGRAFÍA --- */
+    --f-main: "Quicksand", sans-serif;
+    --f-heading: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--f-main);
+    background-color: var(--cloud-white);
+    color: var(--p-purple-deep);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/*--- NAVBAR (REWORK) --- */
+header {
+    background: rgba(15, 5, 27, 0.85);
+    backdrop-filter: var(--glass-blur);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid;
+    border-color: var(--p-purple-vibrant);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.logo h1 {
+    color: var(--cloud-white);
+    font-family: var(--f-heading);
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+}
+.search-bar input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--p-purple-light);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: var(--cloud-white);
+    width: 320px;
+    transition: all 0.3s ease;
+    font-family: var(--f-main);
+}
+.search-bar input:focus {
+    width: 340px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-neon);
+    outline: none;
+}
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fa-magnifying-glass {
+    color: var(--p-purple-light);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.search-button:hover .fa-magnifying-glass {
+    color: var(--p-purple-vibrant);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px var(--p-purple-vibrant));
+}
+
+nav {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav > ul > li > a {
+    color: var(--p-purple-light);
+    font-family: var(--f-main);
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin-left: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+nav ul li a:hover {
+    color: var(--cloud-white);
+    text-shadow: 0 0 8px var(--p-purple-vibrant);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.user-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--p-purple-vibrant);
+    box-shadow: var(--shadow-sm);
+    object-fit: cover;
+}
+.user-name {
+    color: var(--cloud-white);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.user-role {
+    color: var(--p-purple-light);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -20px;
+    background: var(--p-purple-deep);
+    border: 1px solid var(--p-purple-vibrant);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    width: 150px;
+    z-index: 10;
+}
+.dropdown-menu li a {
+    color: var(--cloud-white);
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+.dropdown-menu li a:hover {
+    background: var(--grad-engine);
+    color: var(--cloud-white);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--p-purple-deep);
+    border: 1px solid var(--p-purple-vibrant);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    z-index: 10;
+    list-style: none;
+    padding: 8px;
+    width: 200px;
+}
+.dropdown-content li a {
+    display: block;
+    color: var(--cloud-white);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.dropdown-content li a:hover {
+    background: var(--grad-engine);
+    transform: translateX(5px);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn-login {
+    background: var(--grad-engine);
+    color: var(--cloud-white);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+.btn-login:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: var(--shadow-neon);
+}
+
+/*----- FOOTER (REWORK) ------- */
+.main-footer {
+    background: rgba(15, 5, 27, 0.85);
+    color: var(--cloud-white);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: auto;
+
+    border-top: 2px solid;
+    border-image: linear-gradient(
+            to right,
+            transparent,
+            var(--p-purple-vibrant),
+            var(--p-purple-light),
+            transparent
+        )
+        1;
+}
+.footer-content {
+    margin: 10px 0;
+    font-family: var(--f-main);
+    font-size: 1rem;
+    opacity: 0.9;
+}

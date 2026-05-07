@@ -1,15 +1,16 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     plugins: [
         laravel({
-          input: [
-                'resources/css/global.css',
-                'resources/css/guest/principal.css',
-                'resources/css/guest/auth.css',
-                'resources/css/guest/allcurses.css',
+            input: [
+                "resources/css/global.css",
+                "resources/css/guest/principal.css",
+                "resources/css/guest/auth.css",
+                "resources/css/guest/allcurses.css",
+                "resources/css/guest/details-course",
             ],
             refresh: true,
         }),
@@ -17,7 +18,7 @@ export default defineConfig({
     ],
     server: {
         watch: {
-            ignored: ['**/storage/framework/views/**'],
+            ignored: ["**/storage/framework/views/**"],
         },
     },
 });

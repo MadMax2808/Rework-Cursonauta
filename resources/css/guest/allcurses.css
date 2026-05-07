@@ -13,7 +13,6 @@
     position: sticky;
     top: 100px;
 }
-
 .filters-card {
     background: rgba(46, 16, 82, 0.09);
     backdrop-filter: blur(15px);
@@ -24,7 +23,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 .filters-card h3 {
-    color: var(--p-purple-vibrant);
+    color: var(--p-purple-main);
     font-size: 1.5rem;
     margin-bottom: 25px;
     font-family: var(--f-heading);
@@ -32,7 +31,6 @@
     align-items: center;
     gap: 10px;
 }
-
 .filter-group {
     margin-bottom: 20px;
 }
@@ -62,7 +60,6 @@
     border-color: var(--p-purple-vibrant);
     box-shadow: 0 0 10px rgba(164, 120, 218, 0.2);
 }
-
 .date-inputs {
     display: flex;
     flex-direction: column;
@@ -86,7 +83,6 @@
     justify-content: center;
     gap: 8px;
 }
-
 .apply-filters-btn:hover {
     transform: translateY(-3px);
     filter: brightness(1.1);
@@ -96,11 +92,9 @@
 .courses-display {
     flex: 1;
 }
-
 .display-header {
     margin-bottom: 40px;
 }
-
 .display-header h2 {
     font-size: 2.8rem;
     background: var(--grad-engine);
@@ -109,10 +103,10 @@
     -webkit-text-fill-color: transparent;
     font-family: var(--f-heading);
 }
-
 .display-header p {
  color: var(--p-purple-vibrant);
     font-size: 1.1rem;
     margin-top: -10px;
+    margin-bottom: -15px;
 }
 

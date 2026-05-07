@@ -11,6 +11,7 @@ export default defineConfig({
                 "resources/css/guest/auth.css",
                 "resources/css/guest/allcurses.css",
                 "resources/css/guest/details-course",
+                "resources/css/student/completion.css",
             ],
             refresh: true,
         }),

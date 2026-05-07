@@ -1,0 +1,239 @@
+.completion-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.celebration-header {
+    margin-bottom: 40px;
+}
+
+.trophy-icon {
+    font-size: 4rem;
+    color: var(--accent-gold);
+    filter: drop-shadow(0 0 15px rgba(255, 193, 7, 0.5));
+    margin-bottom: 20px;
+}
+.celebration-header h2 {
+    font-size: 2.5rem;
+    color: var(--p-purple-deep);
+    font-family: var(--f-heading);
+}
+
+/* --- DIPLOMA HOLOGRÁFICO --- */
+.diploma-card {
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(
+        135deg,
+        rgba(140, 82, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    border: 2px solid var(--p-purple-vibrant);
+    box-shadow: 0 0 30px rgba(140, 82, 255, 0.2);
+}
+
+.diploma-border {
+    border: 2px solid rgba(164, 120, 218, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.diploma-logo {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.diploma-header h1 {
+    font-family: var(--f-heading);
+    color: var(--p-purple-deep);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.2rem;
+}
+
+.license-type {
+    color: var(--p-purple-vibrant);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.student-name {
+    font-size: 3rem;
+    color: var(--p-purple-main);
+    margin: 20px 0;
+}
+
+.course-name {
+    color: var(--p-purple-deep);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.diploma-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.signature-line {
+    width: 150px;
+    height: 1px;
+    background: var(--p-purple-deep);
+    margin: 0 auto 10px auto;
+}
+
+.diploma-seal {
+    font-size: 3rem;
+    color: rgba(140, 82, 255, 0.2);
+    border: 2px solid rgba(140, 82, 255, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* --- ACCIONES --- */
+.actions-row {
+    margin: 30px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-download {
+    background: var(--grad-engine);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-neon);
+}
+.glass-panel {
+    background: rgba(46, 16, 82, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(106, 91, 143, 0.2);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.feedback-container {
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px !important;
+}
+
+.feedback-header {
+    margin-bottom: 30px;
+}
+
+.feedback-header i {
+    font-size: 2.5rem;
+    color: var(--p-purple-vibrant);
+    margin-bottom: 15px;
+}
+
+.feedback-header h3 {
+    font-size: 1.8rem;
+    color: var(--p-purple-deep);
+    font-family: var(--f-heading);
+}
+
+.feedback-header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.rating-group {
+    margin-bottom: 30px;
+}
+
+.rating-group p {
+    color: var(--p-purple-deep);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stars-input {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center;
+}
+
+.stars-input input { display: none; }
+
+.stars-input label {
+    font-size: 3rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 5px;
+}
+
+.stars-input label:hover,
+.stars-input label:hover ~ label,
+.stars-input input:checked ~ label {
+    color: #ffc107;
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+.comment-group {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.comment-group label {
+    display: block;
+    color: var(--p-purple-deep);
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.comment-group textarea {
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(164, 120, 218, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: none;
+    transition: 0.3s;
+}
+
+.comment-group textarea:focus {
+    outline: none;
+    border-color: var(--p-purple-vibrant);
+    background: #fff;
+    box-shadow: 0 0 15px rgba(164, 120, 218, 0.1);
+}
+
+.btn-send-mission {
+    width: 100%;
+    background: var(--p-purple-deep);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.btn-send-mission:hover {
+    background: var(--p-purple-main);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 16, 82, 0.2);
+}

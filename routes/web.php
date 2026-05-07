@@ -18,3 +18,6 @@ Route::get('/allcurses', function () {
 Route::get('/details-course', function () {
     return view('guest.details-course');
 });
+Route::get('/completion', function () {
+    return view('student.completion');
+});

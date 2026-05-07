@@ -1,0 +1,71 @@
+/* --- HERO SECTION --- */
+.hero {
+    background: var(--p-purple-deep);
+    background-image:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(140, 82, 255, 0.1) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(97, 45, 145, 0.1) 0%,
+            transparent 40%
+        );
+    padding: 100px 20px;
+    text-align: center;
+}
+.text-gradient {
+    background: var(--grad-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+.hero h2 {
+    font-size: 3.2rem;
+    color: var(--cloud-white);
+    margin-bottom: 15px;
+}
+.hero p {
+    color: var(--p-purple-light);
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.btn-hero {
+    background: var(--grad-engine);
+    color: var(--cloud-white);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: var(--shadow-neon);
+    transition: 0.3s;
+}
+.btn-hero:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: var(--shadow-neon);
+}
+
+/* --- CONTENEDORES --- */
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.courses-section {
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    color: var(--p-purple-main);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+

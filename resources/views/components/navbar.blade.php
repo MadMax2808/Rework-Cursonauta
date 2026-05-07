@@ -24,7 +24,7 @@
                     <li><a href="#">Programación</a></li>
                 </ul>
             </li>
-            <li><a href="{{ url('/cursos') }}">Cursos</a></li>
+            <li><a href="{{ url('/allcurses') }}">Cursos</a></li>
         </ul>
     </nav>
 

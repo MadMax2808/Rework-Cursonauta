@@ -7,6 +7,9 @@ export default defineConfig({
         laravel({
           input: [
                 'resources/css/global.css',
+                'resources/css/guest/principal.css',
+                'resources/css/guest/auth.css',
+                'resources/css/guest/allcurses.css',
             ],
             refresh: true,
         }),

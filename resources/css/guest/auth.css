@@ -1,0 +1,155 @@
+/*-- General y login --*/
+.auth-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--p-purple-deep);
+    background-image:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(140, 82, 255, 0.1) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(97, 45, 145, 0.1) 0%,
+            transparent 40%
+        );
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    width: 100%;
+    min-width: 380px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-md);
+}
+
+.register-container h2 {
+    color: var(--cloud-white);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-family: var(--f-heading);
+}
+
+.form-group label {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1px;
+    display: block;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: var(--cloud-white);
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: var(--p-purple-vibrant);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 15px rgba(140, 82, 255, 0.3);
+}
+
+.btn-register {
+    width: 100%;
+    background: var(--grad-engine);
+    color: var(--cloud-white);
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    box-shadow: var(--shadow-neon);
+    transition:
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+.btn-register:hover {
+    transform: translateY(-3px);
+    filter: saturate(1.2) brightness(1.15);
+    box-shadow: 0 8px 20px rgba(140, 82, 255, 0.4);
+}
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+.login-link p {
+    color: var(--cloud-white);
+    font-size: 0.9rem;
+}
+.login-link a {
+    color: var(--p-purple-vibrant);
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-link a:hover {
+    color: var(--cloud-white);
+    text-decoration: underline;
+    text-shadow: 0 0 8px var(--p-purple-vibrant);
+}
+
+/*-- Registro --*/
+.register-wide {
+    max-width: 600px;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+.photo-group {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px dashed var(--p-purple-vibrant);
+    border-radius: 12px;
+    color: var(--cloud-white);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+.custom-file-upload:hover {
+    background: rgba(140, 82, 255, 0.15);
+    border-style: solid;
+}
+
+.form-group select option {
+    background-color: var(--p-purple-deep);
+    color: var(--cloud-white);
+    padding: 10px;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    cursor: pointer;
+}

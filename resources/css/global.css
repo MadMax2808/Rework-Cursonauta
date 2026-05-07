@@ -67,19 +67,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 2px solid;
-    border-color: var(--p-purple-vibrant);
-
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo-img {
     width: 75px;
     height: 75px;
@@ -87,7 +82,6 @@ header {
     object-fit: cover;
     margin-right: 8px;
 }
-
 .logo h1 {
     color: var(--cloud-white);
     font-family: var(--f-heading);
@@ -102,7 +96,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 13%;
+    margin-left: 12%;
 }
 .search-bar input {
     background: rgba(255, 255, 255, 0.1);

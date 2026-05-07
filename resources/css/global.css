@@ -285,3 +285,14 @@ nav ul li a:hover {
     font-size: 1rem;
     opacity: 0.9;
 }
+
+/*--- Estilos repetitivos---*/
+.glass-panel {
+    background: rgba(46, 16, 82, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(106, 91, 143, 0.2);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 30px;
+}

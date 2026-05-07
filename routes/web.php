@@ -27,4 +27,10 @@ Route::get('/kardex', function () {
 Route::get('/perfil', function () {
     return view('guest.perfil');
 });
+Route::get('/pago', function () {
+    return view('student.pago');
+});
 
+Route::get('/ventas', function () {
+    return view('instructor.sales');
+});

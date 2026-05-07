@@ -97,7 +97,6 @@
     box-shadow: var(--shadow-neon);
 }
 
-/* --- Estilo ggeneral de contenedor --- */
 .glass-panel {
     background: rgba(46, 16, 82, 0.03);
     backdrop-filter: blur(15px);

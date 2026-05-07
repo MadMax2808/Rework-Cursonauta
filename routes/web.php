@@ -21,3 +21,10 @@ Route::get('/details-course', function () {
 Route::get('/completion', function () {
     return view('student.completion');
 });
+Route::get('/kardex', function () {
+    return view('student.kardex');
+});
+Route::get('/perfil', function () {
+    return view('guest.perfil');
+});
+

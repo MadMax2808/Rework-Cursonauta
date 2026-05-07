@@ -1,0 +1,222 @@
+.kardex-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.glass-panel {
+    background: rgba(46, 16, 82, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(106, 91, 143, 0.2);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* --- FiltrosS --- */
+.kardex-filters {
+    width: 280px;
+    height: fit-content;
+    padding: 25px !important;
+    position: sticky;
+    top: 100px;
+}
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--p-purple-vibrant);
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+.filter-group {
+    margin-bottom: 18px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--shadow-neon);
+    margin-bottom: 8px;
+}
+.filter-group label i {
+    color: var(--p-purple-light);
+    margin-right: 5px;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 11px;
+    border-radius: 12px;
+    border: 1px solid var(--p-purple-light);
+    background: var(--cloud-white);
+    font-family: inherit;
+    color: var(--p-purple-deep);
+    transition: 0.3s;
+}
+
+.filter-group select:focus {
+    border-color: var(--p-purple-vibrant);
+    outline: none;
+}
+.apply-filters-btn {
+    width: 100%;
+    font-family: var(--f-main);
+    background: var(--p-purple-deep);
+    color: var(--cloud-white);
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.apply-filters-btn:hover {
+    background: var(--p-purple-main);
+    transform: translateY(-2px);
+}
+
+/*---Kardex*/
+.kardex-main {
+    flex: 1;
+}
+.kardex-header-title {
+    margin-bottom: 30px;
+}
+.kardex-header-title h2 {
+    font-size: 2.5rem;
+    color: var(--p-purple-deep);
+    font-family: var(--f-heading);
+}
+.kardex-header-title p {
+    color: var(--p-purple-light);
+    margin-top: -5px;
+}
+
+.table-container-scroller {
+    padding: 0;
+    overflow-x: auto;
+}
+.kardex-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    min-width: 900px;
+}
+.kardex-table th {
+    background: rgba(103, 77, 169, 0.1);
+    padding: 20px 15px;
+    text-align: left;
+    color: var(--p-purple-deep);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid rgba(164, 120, 218, 0.1);
+}
+
+.kardex-table th.col-main {
+    width: 30%;
+}
+.kardex-table td {
+    padding: 22px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    color: #444;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+.kardex-table tbody tr:hover td {
+    background: rgba(164, 120, 218, 0.03);
+}
+
+.course-name-cell strong {
+    display: block;
+    color: var(--p-purple-deep);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+.category-cell {
+    color: var(--p-purple-main);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.na-cell {
+    color: #ccc;
+    font-style: italic;
+}
+
+.progress-cell-wrapper {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pct-num {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+    width: 40px;
+    text-align: right;
+}
+
+.mini-bar-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.mini-bar-track .fill {
+    height: 100%; 
+    border-radius: 10px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+.mini-bar-track .fill.completed {
+    background: var(--p-purple-vibrant);
+    box-shadow: 0 0 10px rgba(164, 120, 218, 0.3);
+}
+.mini-bar-track .fill.active {
+    background: var(--grad-engine); 
+    box-shadow: 0 0 15px rgba(164, 120, 218, 0.5);
+}
+
+
+.status-badge.active {
+    color: var(--p-purple-vibrant);
+    background: rgba(164, 120, 218, 0.171);
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid rgba(164, 120, 218, 0.2);
+}
+.btn-certificado-log {
+    background: var(--p-purple-deep);
+    color: var(--cloud-white);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-certificado-log i {
+    font-size: 1rem;
+    color: var(--accent-gold);
+}
+.btn-certificado-log:hover {
+    background: var(--p-purple-main);
+    box-shadow: var(--shadow-neon);
+    transform: translateY(-2px);
+}

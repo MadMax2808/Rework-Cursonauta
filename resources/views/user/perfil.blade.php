@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
-@vite(['resources/css/guest/perfil.css'])
+@vite(['resources/css/user/perfil.css'])
 @endpush
 
 @section('content')

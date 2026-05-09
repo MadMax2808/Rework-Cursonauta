@@ -14,8 +14,12 @@ export default defineConfig({
                 "resources/css/student/completion.css",
                 "resources/css/student/kardex.css",
                 "resources/css/student/pago.css",
-                "resources/css/guest/perfil.css",
                 "resources/css/instructor/sales.css",
+                "resources/css/instructor/newcourse.css",
+                "resources/css/user/perfil.css",
+                "resources/css/user/message.css",
+
+                "resources/js/instructor/newcourse.js",
             ],
             refresh: true,
         }),

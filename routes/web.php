@@ -25,7 +25,10 @@ Route::get('/kardex', function () {
     return view('student.kardex');
 });
 Route::get('/perfil', function () {
-    return view('guest.perfil');
+    return view('user.perfil');
+});
+Route::get('/mensajes', function () {
+    return view('user.message');
 });
 Route::get('/pago', function () {
     return view('student.pago');
@@ -33,4 +36,7 @@ Route::get('/pago', function () {
 
 Route::get('/ventas', function () {
     return view('instructor.sales');
+});
+Route::get('/nuevocurso', function () {
+    return view('instructor.newcourse');
 });
